@@ -1,7 +1,7 @@
 # Spotify Arc
 
 
-![alt text](/spotify_arc_homescreen.png "Homescreen")
+![Spotify Homescreen](spotify_arc_homescreen.png "Homescreen")
 
 
 ### How to install
