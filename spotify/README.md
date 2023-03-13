@@ -1,6 +1,6 @@
 # Spotify Arc
 
-Beautiful theme, inspired by [Dribblish Spicetify], which automatically adapts to your arc theme.
+Beautiful theme, inspired by [Dribblish Spicetify](https://github.com/spicetify/spicetify-themes/tree/master/Dribbblish), which automatically adapts to your arc theme.
 
 ![Spotify Homescreen](spotify_arc_homescreen.png "Homescreen")
 
