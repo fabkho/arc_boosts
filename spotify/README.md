@@ -2,6 +2,7 @@
 
 
 ![Spotify Homescreen](spotify_arc_homescreen.png "Homescreen")
+![Spotify Playlist](spotify_arc_playlist.png "Homescreen")
 
 
 ### How to install
