@@ -1,0 +1,1 @@
+{"pinned":false,"id":"8b5b7900-9e6b-4f14-bc8f-e5feb95481cc","scope":"open.spotify.com","installedInProfiles":[{"default":{}}],"extensionId":"occfgheeapngocanadidkjgimpenhldn","components":{"contentScript":{"path":"content.js","enabled":true},"contentStylesheet":{"path":"styles.css","enabled":true}},"extensionEnabled":true,"name":"spotify_arc"}
