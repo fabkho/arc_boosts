@@ -2,6 +2,12 @@
 
 Beautiful theme, inspired by [Dribblish Spicetify](https://github.com/spicetify/spicetify-themes/tree/master/Dribbblish), which automatically adapts to your arc theme.
 
+## Feautures 💣
+
+- New releases in Sidebar. (link to [spotify release list](https://spotifyreleaselist.netlify.app/) )
+- removed annoying "Install App" button.
+- cleaned UI
+ 
 
 ![Spotify Homescreen](spotify_arc_homescreen.png "Homescreen")
 
@@ -24,7 +30,7 @@ Beautiful theme, inspired by [Dribblish Spicetify](https://github.com/spicetify/
 3. You're done! Enjoy 👋
 
 
-### Tips ✏️
+## Tips ✏️
 
 #### Is your Background to bright to see the font properly?
  -> Go to "styles.css" and change the variable `--contrast-color` to your needs.
