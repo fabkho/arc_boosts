@@ -22,3 +22,8 @@ Beautiful theme, inspired by [Dribblish Spicetify](https://github.com/spicetify/
 1. Go the the [source folder](/src) and copy the content of styles.css and paste it into the styles.css file of your new boost.
 2. Next do the same for the content.js file.
 3. You're done! Enjoy 👋
+
+
+#### Tips ✏️
+- Is your Background to bright to see the font properly?
+  -> go to "styles.css" and change the variable `--contrast-color` to your needs.
