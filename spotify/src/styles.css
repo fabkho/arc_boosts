@@ -32,7 +32,13 @@
 /* global variables*/
 :root {
   --sidebar-bg: var(--arc-background-simple-color);
-  --now-playing-bg: ;
+  --gradient1: var(--arc-background-gradient-color0);
+  --gradient2: var(--arc-background-gradient-color1);
+  --gradient3: var(--arc-background-gradient-color2);
+  --primary: var(--arc-palette-foregroundPrimary);
+  --secondary: var(--arc-palette-foregroundSecondary);
+  --tertiary: var(--arc-palette-foregroundTertiary);
+  --contrast-color: var(--arc-palette-title);
   --main-bg: #0f0f0f;
   --playlist-color: #000000; /* Current playlists main color. This variable is set by content.js */
   --main-container: #181818;
@@ -43,16 +49,16 @@
 
 /* here you can set global styling */
 * {
-    /*font-family: "Comic Sans MS", "Chalkboard SE", cursive, sans-serif !important;*/
-    color: var(--arc-palette-title) !important
+  /*font-family: "Comic Sans MS", "Chalkboard SE", cursive, sans-serif !important;*/
+  color: var(--arc-palette-title) !important
 }
 
 
 /********************* main view (window) *****************************/
 .Root__main-view {
-    background-color: var(--main-bg) !important;
-    border-radius: var(--main-corner-radius) var(--main-corner-radius) 0 0;
-    overflow: hidden;
+  background-color: var(--main-bg) !important;
+  border-radius: var(--main-corner-radius) var(--main-corner-radius) 0 0;
+  overflow: hidden;
 }
 
 /* change color of top container*/
@@ -78,17 +84,17 @@
 
 /********************* now playing container (bottom) *****************************/
 .GD2gbRtcs5dOjMGAM_Y4 {
-    border-radius: 0 0 var(--main-corner-radius) var(--main-corner-radius) !important;
+  border-radius: 0 0 var(--main-corner-radius) var(--main-corner-radius) !important;
 }
 
 /* Listening on Device */
 div.Root__now-playing-bar > footer > div:nth-child(2) * {
   border-radius: 0 0 var(--main-corner-radius) var(--main-corner-radius) !important;
-  background-color: var(--arc-palette-foregroundSecondary) !important;
+  background-color: var(--secondary) !important;
 }
 
 .WFRr38dFOxh75JyzSTj5.IbmaxRtjqCjqTBpFwCgw {
-  border-bottom: 10px solid var(--arc-palette-foregroundSecondary) !important;
+  border-bottom: 10px solid var(--secondary) !important;
 }
 
 
@@ -107,13 +113,27 @@ div.Root__now-playing-bar > footer > div:nth-child(2) * {
   background-image:  linear-gradient(to right, transparent, var(--arc-palette-hover), transparent) !important;
 }
 
+/* color the sidebar */
 .Root__nav-bar {
-    background-color: var(--sidebar-bg) !important;
+  background-image: linear-gradient(
+          var(--gradient1, var(--sidebar-bg)),
+          var(--gradient2, var(--sidebar-bg)),
+          var(--gradient3, var(--gradient2, var(--sidebar-bg)))
+  );
+}
+
+/* set font color of sidebar */
+.Root__nav-bar *, svg path {
+  color: var(--contrast-color) !important;
 }
 
 /* color the html background */
 html > :not(.main) {
-  background-color: var(--sidebar-bg);
+  background-image: linear-gradient(
+          var(--gradient1, var(--sidebar-bg)),
+          var(--gradient2, var(--sidebar-bg)),
+          var(--gradient3, var(--gradient2, var(--sidebar-bg)))
+  );
 }
 
 /* Hover */
@@ -152,7 +172,7 @@ div.os-padding > div > div > ul > div > div:nth-child(2) > div:hover {
   top: 2px;
   left: 0;
   width: 100%;
-  height: 2rem;
+  height: 1.75rem;
   background: linear-gradient(var(--sidebar-bg), transparent);
 }
 
@@ -162,29 +182,29 @@ div.os-padding > div > div > ul > div > div:nth-child(2) > div:hover {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 3rem;
+  height: 2.5rem;
   background: linear-gradient(transparent, var(--sidebar-bg));
 }
 
 
 /********************* Grid *****************************/
 .Root__top-container {
-    padding: var(--main-gap) 0;
+  padding: var(--main-gap) 0;
 }
 
 .Root__top-container:has(.main-buddyFeed-container ) {
-    grid-template-areas:
+  grid-template-areas:
         "top-bar top-bar top-bar"
         "nav-bar main-view right-sidebar"
         "nav-bar now-playing-bar right-sidebar";
 }
 
 .Root__top-container:not(:has(.main-buddyFeed-container )) {
-    grid-template-areas:
+  grid-template-areas:
         "top-bar top-bar"
         "nav-bar main-view"
         "nav-bar now-playing-bar";
-    padding-right: var(--main-gap);
+  padding-right: var(--main-gap);
 }
 
 
@@ -199,14 +219,34 @@ div.os-padding > div > div > ul > div > div:nth-child(2) > div:hover {
 }
 
 
+/********************* Images *****************************/
+/* corner radius on playlist images */
+div[data-testid="playlist-image"] img:first-child {
+  border-radius: var(--main-corner-radius);
+}
+
+/* corner radius on song cove r*/
+div.gvLrgQXBFVW6m9MscfFA > img,
+.BFR9Zt3zpL8BATBMiwQB * {
+  border-radius: 0.2rem;
+}
+
+
 /********************* misc *****************************/
-/*Hide download button*/
+/*Hide download button */
 a[href="/download"] {
   display: none;
 }
 
-/* hide sidebar elements (liked songs etc)*/
-div.LKgm9fCDTO7wqig_5U1q > div > div:nth-child(-n+3) {
+/* Hide Recommended section*/
+div.contentSpacing > div.kwe0I8sSNMv3gYBjkRYP {
+  display: none;
+}
+
+/* hide sidebar elements (liked songs etc) */
+div.LKgm9fCDTO7wqig_5U1q > div > div:nth-child(-n+3),
+button.STDuzt77yRCueC4Ohenl,
+main > div.main-view-container__mh-footer-container > nav {
   display: none;
 }
 
@@ -219,7 +259,5 @@ svg path {
   fill: var(--icons);
 }
 
-/* corner radius on playlist images*/
-div[data-testid="playlist-image"] img:first-child {
-  border-radius: var(--main-corner-radius);
-}
+
+
