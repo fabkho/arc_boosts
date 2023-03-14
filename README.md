@@ -1,7 +1,10 @@
 # Collection of my Arc Boosts 🚀
 
-### Spotify 🎧
+### [Spotify](/spotify) 🎧
 
-Spotify theme, inspired by (Dribbblish), which automatically adapts to your arc theme. 
+Spotify theme which automatically adapts to your arc theme. 
 
-[Here you go to spotify_arc](/spotify)
+![alt text](spotify/spotify_arc_homescreen.png "Spotify Homescreen")
+
+
+
