@@ -24,6 +24,7 @@ Beautiful theme, inspired by [Dribblish Spicetify](https://github.com/spicetify/
 3. You're done! Enjoy 👋
 
 
-#### Tips ✏️
-- Is your Background to bright to see the font properly?
-  - go to "styles.css" and change the variable `--contrast-color` to your needs.
+### Tips ✏️
+
+#### Is your Background to bright to see the font properly?
+Go to "styles.css" and change the variable `--contrast-color` to your needs.
