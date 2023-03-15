@@ -4,7 +4,7 @@
 
 Spotify theme which automatically adapts to your arc theme. 
 
-![alt text](spotify/spotify_arc_homescreen.png "Spotify Homescreen")
+![alt text](spotify/spotify_homescreen.png "Spotify Homescreen")
 
 
 
