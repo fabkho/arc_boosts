@@ -1,3 +1,6 @@
+/**
+ * 2s Timeout is needed for selectors to be defined
+ */
 setTimeout(() => {
   console.clear();
 
@@ -17,6 +20,10 @@ setTimeout(() => {
 
 }, 2000);
 
+/**
+ * handles highlighting of current playlist page
+ *
+ */
 function handleListItemClick() {
   const playlistItemElems = document.querySelectorAll("#main > div > div.Root__top-container > nav > div.tUwyjggD2n5KvEtP5z1B > div.LKgm9fCDTO7wqig_5U1q > div > div.UCEIwrWMxnBFH4uoPybJ > div > div.os-padding > div > div > ul > div > div:nth-child(2) > div");
 
@@ -34,30 +41,15 @@ function handleListItemClick() {
   console.log(playlistId);
 }
 
-function getLastTrackOfPlaylist () {
-  const tracks = document.querySelectorAll("div.contentSpacing > div.ShMHCGsT93epRGdxJp2w.Ss6hr6HYpN4wjHJ9GHmi > div.JUa6JJNj7R_Y3i4P8YUX > div:nth-child(2) > div[aria-rowindex]");
-  console.log(tracks);
-  const lastTrack = tracks[tracks.length - 1];
-  const rowCount = lastTrack.getAttribute("aria-rowcount");
-  console.log(rowCount);
-
-  for(let i = 0; i < tracks.length; i++) {
-    const track = tracks[i];
-    const rowIndex = track.getAttribute("aria-rowindex");
-
-    if(rowIndex === rowCount) {
-      // This is the last track element
-      return track;
-    }
-  }
-}
-
 function scrollToBottomOfPlaylist () {
   const scrollable = document.querySelector('.main-view-container__scroll-node-child');
   scrollable.scrollTop = scrollable.scrollHeight;
   scrollable.scrollIntoView(false);
 }
 
+/**
+ * adds link in sidebar to https://spotifyreleaselist.netlify.app/
+ */
 function addNewReleasesLink () {
   // get your Library element
   const navList = document.querySelector("#main > div > div.Root__top-container.Root__top-container--right-sidebar-visible > nav > div.tUwyjggD2n5KvEtP5z1B > ul");
