@@ -58,32 +58,6 @@ function scrollToBottomOfPlaylist () {
   scrollable.scrollIntoView(false);
 }
 
-function addNewReleasesPage () {
-  // get your Library element
-  const navList = document.querySelector("#main > div > div.Root__top-container.Root__top-container--right-sidebar-visible > nav > div.tUwyjggD2n5KvEtP5z1B > ul");
-  // generate new Releases element
-  // Build the swap button with the SVG and the URL
-  const newReleaseElement = Object.assign(document.createElement('li'), {
-    className: 'eNs6P3JYpf2LScgTDHc6 NewReleaseLink',
-    innerHTML: `
-                  <div class="GlueDropTarget GlueDropTarget--tracks GlueDropTarget--albums GlueDropTarget--artists GlueDropTarget--playlists GlueDropTarget--playlists GlueDropTarget--shows b2KVTiBUcXV1kT0OjL2p">
-                    <a draggable="false" class="link-subtle ATUzFKub89lzvkmvhpyE" href="/collection">
-                      <svg role="img" height="24" width="24" aria-hidden="true" class="Svg-sc-ytk21e-0 uPxdw" viewBox="0 0 1024 1024" data-encore-id="icon">
-                        <path d="M512 64a64 64 0 0 1 64 64v64H448v-64a64 64 0 0 1 64-64z"/>
-                        <path d="M256 768h512V448a256 256 0 1 0-512 0v320zm256-640a320 320 0 0 1 320 320v384H192V448a320 320 0 0 1 320-320z"/>
-                        <path d="M96 768h832q32 0 32 32t-32 32H96q-32 0-32-32t32-32zm352 128h128a64 64 0 0 1-128 0z"/>
-                      </svg>
-                      <span class="Type__TypeElement-sc-goli3j-0 jdSGNV ellipsis-one-line" data-encore-id="type">
-                        New Releases
-                      </span>
-                    </a>
-                  </div>    `
-  });
-  // insert after
-  // Inject the button right before the account button
-  navList.insertAdjacentElement('beforeend' ,newReleaseElement);
-}
-
 function addNewReleasesLink () {
   // get your Library element
   const navList = document.querySelector("#main > div > div.Root__top-container.Root__top-container--right-sidebar-visible > nav > div.tUwyjggD2n5KvEtP5z1B > ul");
@@ -93,7 +67,7 @@ function addNewReleasesLink () {
     className: 'eNs6P3JYpf2LScgTDHc6',
     innerHTML: `
                   <div class="GlueDropTarget GlueDropTarget--tracks GlueDropTarget--albums GlueDropTarget--artists GlueDropTarget--playlists GlueDropTarget--playlists GlueDropTarget--shows b2KVTiBUcXV1kT0OjL2p">
-                    <a draggable="false" class="link-subtle ATUzFKub89lzvkmvhpyE" href="/collection">
+                    <a draggable="false" class="link-subtle ATUzFKub89lzvkmvhpyE" href="https://spotifyreleaselist.netlify.app/">
                       <svg role="img" height="24" width="24" aria-hidden="true" class="Svg-sc-ytk21e-0 uPxdw" viewBox="0 0 1024 1024" data-encore-id="icon">
                         <path d="M512 64a64 64 0 0 1 64 64v64H448v-64a64 64 0 0 1 64-64z"/>
                         <path d="M256 768h512V448a256 256 0 1 0-512 0v320zm256-640a320 320 0 0 1 320 320v384H192V448a320 320 0 0 1 320-320z"/>
