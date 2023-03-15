@@ -9,8 +9,6 @@ Beautiful theme, inspired by [Dribblish Spicetify](https://github.com/spicetify/
 - cleaned UI
 
 
-<img src="spotify_homescreen.png" alt="Homescreen" style="border-radius: 50% !important;">
-
 
 ![Spotify Homescreen](spotify_homescreen.png "Homescreen")
 
