@@ -7,11 +7,15 @@ Beautiful theme, inspired by [Dribblish Spicetify](https://github.com/spicetify/
 - New releases in Sidebar. (link to [spotify release list](https://spotifyreleaselist.netlify.app/) )
 - removed annoying "Install App" button.
 - cleaned UI
- 
+
+
+
 
 ![Spotify Homescreen](spotify_arc_homescreen.png "Homescreen")
 
 ![Spotify Playlist](spotify_arc_playlist.png "Homescreen")
+
+
 
 
 ## How to install
