@@ -11,9 +11,9 @@ Beautiful theme, inspired by [Dribblish Spicetify](https://github.com/spicetify/
 
 
 
-![Spotify Homescreen](spotify_arc_homescreen.png "Homescreen")
+![Spotify Homescreen](spotify_homescreen.png "Homescreen")
 
-![Spotify Playlist](spotify_arc_playlist.png "Homescreen")
+![Spotify Playlist](spotify_playlist.png "Playlist")
 
 
 
