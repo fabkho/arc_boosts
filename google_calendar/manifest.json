@@ -1,0 +1,19 @@
+{
+  "name": "My calendar.google.com Style Boost",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.calendar.google.com/*"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "permissions": []
+}

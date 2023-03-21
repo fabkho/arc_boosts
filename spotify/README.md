@@ -28,7 +28,7 @@ Beautiful theme, inspired by [Dribblish Spicetify](https://github.com/spicetify/
 
 ### Add Spotify Arc
 
-1. Go the the [source folder](/src) and copy the content of styles.css and paste it into the styles.css file of your new boost.
+1. Go the [source folder](/src) and copy the content of styles.css and paste it into the styles.css file of your new boost.
 2. Next do the same for the content.js file.
 3. You're done! Enjoy 👋
 
