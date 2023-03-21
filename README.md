@@ -7,7 +7,7 @@ Spotify theme which automatically adapts to your arc theme.
 ![Spotify Homescreen](spotify/spotify_homescreen.png "Spotify Homescreen")
 
 
-### [Google Calendar Dark Mode](/google_calendar) 🎧
+### [Google Calendar Dark Mode](/google_calendar) 🗓️
 
 Dark theme for Google Calendar.
 
