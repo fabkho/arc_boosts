@@ -39,5 +39,5 @@ Beautiful theme, inspired by [Dribblish Spicetify](https://github.com/spicetify/
  -> Go to "styles.css" and change the variable `--contrast-color` to your needs.
  
  
-## Issues
+## Issues ❓
 If you ran into any issues please create an Issue and attach an screenshot.
