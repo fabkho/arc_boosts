@@ -3,7 +3,7 @@
 Dark theme for Google Calendar.
 
 
-![Google Calendar](google_calendar/google_calendar.png "Google Calendar")
+![Google Calendar](google_calendar.png "Google Calendar")
 
 
 ## How to install
