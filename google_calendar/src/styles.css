@@ -58,14 +58,16 @@ div.dwlvNd.Hrn1mc > div > div {
     width: 95% !important;
 }
 
+/*
 .iWO5td * {
-    background: unset !important;
+  background: unset !important;
 }
+*/
 
 .jVwmLb{
     border-radius: 5rem !important;
     width: auto !important;
-    padding-left: 0rem !important;
+    padding-left: 0 !important;
 }
 
 /* new modal*/
@@ -84,6 +86,10 @@ form[role=search] {
 }
 input::placeholder {
     color: transparent !important;
+}
+
+.I7OXgf {
+    background-color: var(--mdc-theme-surface) !important;
 }
 
 /* search for people */
