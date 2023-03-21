@@ -39,6 +39,7 @@
   --secondary: var(--arc-palette-foregroundSecondary);
   --tertiary: var(--arc-palette-foregroundTertiary);
   --contrast-color: var(--arc-palette-title);
+  --contrast-color_dark: #2b2b2b;
   --main-bg: #0f0f0f;
   --playlist-color: #000000; /* Current playlists main color. This variable is set by content.js */
   --main-container: #181818;
@@ -51,6 +52,11 @@
 * {
   /*font-family: "Comic Sans MS", "Chalkboard SE", cursive, sans-serif !important;*/
   color: var(--arc-palette-title) !important
+}
+
+/* input field text color */
+input {
+  color: var(--contrast-color_dark) !important;
 }
 
 
@@ -81,6 +87,10 @@
   box-shadow: none !important;
 }
 
+/* chips */
+.dRqLpa{
+  background-color: var(--tertiary) !important;
+}
 
 /********************* now playing container (bottom) *****************************/
 .GD2gbRtcs5dOjMGAM_Y4 {
