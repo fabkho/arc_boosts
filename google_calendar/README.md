@@ -3,7 +3,7 @@
 Dark theme for Google Calendar.
 
 
-![Google Calendar](google_calendar/google_calendar.png "Google Calendar")
+![Google Calendar](google_calendar.png "Google Calendar")
 
 
 ## How to install
@@ -20,3 +20,5 @@ Dark theme for Google Calendar.
 1. Go the [source folder](/src) and copy the content of styles.css and paste it into the styles.css file of your new boost.
 2. You're done! Enjoy 👋
 
+## Issues ❓
+If you ran into any issues please create an Issue and attach an screenshot.
