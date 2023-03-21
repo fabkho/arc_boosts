@@ -38,70 +38,71 @@
 }
 
 * {
-  color: whitesmoke !important;
+    color: whitesmoke !important;
 }
 
 header{
-  background-color: #202124 !important;
+    background-color: #202124 !important;
 }
 
 /* fix button */
 .buGMKc, .dwlvNd.RDPZE .buGMKc:hover, .dwlvNd.RDPZE .buGMKc:focus{
-  border-radius: 0 1rem 1rem 0 !important;
-  padding-left: 1rem !important;
-  margin-left: -1rem !important;
-  width: 14rem !important;
+    border-radius: 0 1rem 1rem 0 !important;
+    padding-left: 1rem !important;
+    margin-left: -1rem !important;
+    width: 14rem !important;
 }
 
 div.dwlvNd.Hrn1mc > div > div {
-  border-radius: 0 1rem 1rem 0 !important;
-  width: 95% !important;
+    border-radius: 0 1rem 1rem 0 !important;
+    width: 95% !important;
 }
 
 .iWO5td * {
-  background: unset !important;
+    background: unset !important;
 }
 
 .jVwmLb{
-  border-radius: 5rem !important;
-  width: auto !important;
-  padding-left: 0 !important;
+    border-radius: 5rem !important;
+    width: auto !important;
+    padding-left: 0rem !important;
 }
 
 /* new modal*/
 body > div.JPdR6b.QFf4q.qjTEB > div {
-  background-color: var(--surface) !important;
+    background-color: var(--surface) !important;
 }
 
 /* change hover color of calender */
 div.yRgNBf > div[role=row] > span >:hover {
-  background-color: var(--fab-hover) !important;
+    background-color: var(--fab-hover) !important;
 }
 
 /* change color of search field*/
 form[role=search] {
-  background-color: #303134 !important;
+    background-color: #303134 !important;
 }
 input::placeholder {
-  color: transparent !important;
+    color: transparent !important;
 }
 
 /* search for people */
 .OFaVze {
-  background-color: var(--mdc-theme-surface) !important;
-} 
+    background-color: var(--mdc-theme-surface) !important;
+    box-shadow: unset !important;
+}
 
 /* selected person chip*/
 .cnTo8e.FYQzvb::before {
-  background-color: unset !important;
+    background-color: unset !important;
 }
 .cnTo8e.FYQzvb.Z3ReZe{
-  border-color: var(--mdc-theme-surface) !important;
-  background-color: var(--mdc-theme-surface) !important;
+    border-color: var(--mdc-theme-surface) !important;
+    background-color: var(--mdc-theme-surface) !important;
 }
 
 .L5WGxc * {
-  background-color: var(--mdc-theme-surface) !important;
+    background-color: var(--mdc-theme-surface) !important;
 }
 
 .AZW99:hover, .AZW99:hover *{
@@ -110,56 +111,99 @@ input::placeholder {
 
 /* searchbox */
 .BYXlo {
-  background-color: var(--mdc-theme-surface) !important;
+    background-color: var(--mdc-theme-surface) !important;
 }
 #aso_search_form_anchor > table * {
-  background-color: var(--mdc-theme-surface) !important;
+    background-color: var(--mdc-theme-surface) !important;
 }
 #aso_search_form_anchor > div.BYXlo > div > div:nth-child(1) > div.aSTvTe > div > div > div.OA0qNb.ncFHed {
-  background-color: var(--surface) !important;
-  border-radius: 0.5rem !important;
-  padding: 1rem !important;
-  margin-top: 0.25rem !important;
+    background-color: var(--surface) !important;
+    border-radius: 0.5rem !important;
+    padding: 1rem !important;
+    margin-top: 0.25rem !important;
 }
 .ncFHed .MocG8c.KKjvXb {
-  background-color: var(--fab-hover) !important;
-  border-radius: 0.5rem !important;
+    background-color: var(--fab-hover) !important;
+    border-radius: 0.5rem !important;
 }
 /* calender in searchbox */
 .gHQcAb {
-  border-radius: 0.5rem !important;
-  background-color: var(--surface) !important;
+    border-radius: 0.5rem !important;
+    background-color: var(--surface) !important;
 }
 
 /* Hide support button*/
 div.gb_we.gb_ue > div > div > div.h8Aqhb {
- display: none;
+    display: none;
 }
 
 /* hover over number in calendar*/
 .yzYBvd:hover {
-  background-color: var(--hover) !important;
+    background-color: var(--hover) !important;
 }
 
 /* hide the "more Apps button" */
 #gbwa {
-  visibility: hidden !important;
+    visibility: hidden !important;
 }
 
 /* left Sidebar */
 /* clicked */
 .DWWcKd-OomVLb-LgbsSe-gk6SMd * {
-  background-color: var(--selected) !important;
+    background-color: var(--selected) !important;
 }
 /* Hover */
 .DWWcKd-OomVLb-LgbsSe-ZmdkE * {
-  background-color: var(--hover) !important;
+    background-color: var(--hover) !important;
 }
-/* plus button */
-#qJTzr > div.DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf {
-  background-image: url(https://fonts.gstatic.com/s/i/googlematerialicons/add/v21/white-24dp/1x/gm_add_white_24dp.png) !important;
-}
+
 /* Hide weird gradient Border*/
 div.hEtGGf.HDIIVe.sBn5T::after {
- display: none;
+    display: none;
 }
+
+/* color settings */
+.hqBSCb:not(.VfPpkd-O1htCb-OWXEXe-OWB6Me) .VfPpkd-TkwUic {
+    background-color: #303134 !important;
+}
+.s8kOBc .VfPpkd-rymPhb-ibnC6b.VfPpkd-rymPhb-ibnC6b-OWXEXe-gk6SMd {
+    background-color: var(--selected) !important;
+}
+
+/************* Trash **********************/
+.Lzfnue {
+    background-color: var(--mdc-theme-surface) !important;
+    border-radius: 0.5rem !important;
+    margin-right: 4rem !important;
+}
+.LOewLb.KKjvXb{
+    background-color: var(--fab) !important;
+}
+
+/************* Settings **********************/
+.yVWOnb {
+    margin-top: 0.5rem !important;
+}
+
+.cAYGed.KKjvXb .Ioup7e, .cAYGed.KKjvXb .BMQm1d{
+    background-color: var(--fab) !important;
+}
+.nBzcnc.Wm6kRe.huVZvb:hover, .GrxScd .SWigMc.Wm6kRe.huVZvb:focus, .nBzcnc.gk6SMd.huVZvb {
+    background-color: var(--hover) !important;
+
+}
+/* Modal */
+.cC1eCc .VfPpkd-P5QLlc {
+    background-color: var(--mdc-theme-surface) !important;
+    box-shadow: unset !important;
+}
+.WmnPA:not(.VfPpkd-fmcmS-yrriRe-OWXEXe-OWB6Me) {
+    background-color: #303134 !important;
+}
+/* dropdown */
+div.OA0qNb.ncFHed {
+    background-color: var(--mdc-theme-surface) !important;
+    border-radius: 0.5rem !important;
+}
+
+
