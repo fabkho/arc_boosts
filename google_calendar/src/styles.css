@@ -67,7 +67,7 @@ div.dwlvNd.Hrn1mc > div > div {
 .jVwmLb{
     border-radius: 5rem !important;
     width: auto !important;
-    padding-left: 0 !important;
+    padding-left: 0rem !important;
 }
 
 /* new modal*/
@@ -161,6 +161,10 @@ div.gb_we.gb_ue > div > div > div.h8Aqhb {
 /* Hover */
 .DWWcKd-OomVLb-LgbsSe-ZmdkE * {
     background-color: var(--hover) !important;
+}
+/* plus icon */
+#qJTzr > div.DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf{
+    background-image: url(https://fonts.gstatic.com/s/i/googlematerialicons/add/v21/white-24dp/1x/gm_add_white_24dp.png) !important;
 }
 
 /* Hide weird gradient Border*/
