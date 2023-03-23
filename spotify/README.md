@@ -1,6 +1,11 @@
-# Spotify Arc
+<div align="center">
+  <h1>Spotify Arc</h1>
+  
+  Beautiful theme, inspired by [Dribblish Spicetify](https://github.com/spicetify/spicetify-themes/tree/master/Dribbblish), which automatically adapts to  your arc theme.
 
-Beautiful theme, inspired by [Dribblish Spicetify](https://github.com/spicetify/spicetify-themes/tree/master/Dribbblish), which automatically adapts to your arc theme.
+[![visitors](https://visitor-badge.glitch.me/badge?page_id=fabian-kho/arc_boosts)](https://visitor-badge.glitch.me)
+</div>
+
 
 ## Feautures 💣
 
