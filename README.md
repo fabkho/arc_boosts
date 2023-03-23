@@ -1,4 +1,9 @@
-# Collection of my Arc Boosts 🚀
+<div align="center">
+  <h1>Collection of my Arc Boosts 🚀</h1>
+
+[![visitors](https://visitor-badge.glitch.me/badge?page_id=fabian-kho/arc_boosts)](https://visitor-badge.glitch.me)
+</div>
+
 
 ### [Spotify](/spotify) 🎧
 
