@@ -1,0 +1,21 @@
+{
+  "name": "Youtube Spotify Link",
+  "description": "",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "icons": {
+    "32": "youtube_32.png",
+    "256": "youtube_256.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.www.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "permissions": []
+}
