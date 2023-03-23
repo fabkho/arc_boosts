@@ -45,42 +45,7 @@ header{
     background-color: #202124 !important;
 }
 
-/* fix button */
-.buGMKc, .dwlvNd.RDPZE .buGMKc:hover, .dwlvNd.RDPZE .buGMKc:focus{
-    border-radius: 0 1rem 1rem 0 !important;
-    padding-left: 1rem !important;
-    margin-left: -1rem !important;
-    width: 14rem !important;
-}
-
-div.dwlvNd.Hrn1mc > div > div {
-    border-radius: 0 1rem 1rem 0 !important;
-    width: 95% !important;
-}
-
-/*
-.iWO5td * {
-  background: unset !important;
-}
-*/
-
-.jVwmLb{
-    border-radius: 5rem !important;
-    width: auto !important;
-    padding-left: 0 !important;
-}
-
-/* new modal*/
-body > div.JPdR6b.QFf4q.qjTEB > div {
-    background-color: var(--surface) !important;
-}
-
-/* change hover color of calender */
-div.yRgNBf > div[role=row] > span >:hover {
-    background-color: var(--fab-hover) !important;
-}
-
-/* change color of search field*/
+/************************ search field  *******************/
 form[role=search] {
     background-color: #303134 !important;
 }
@@ -92,7 +57,7 @@ input::placeholder {
     background-color: var(--mdc-theme-surface) !important;
 }
 
-/* search for people */
+/************************ search for people  *******************/
 .OFaVze {
     background-color: var(--mdc-theme-surface) !important;
     box-shadow: unset !important;
@@ -115,7 +80,7 @@ input::placeholder {
     background-color: var(--hover) !important;
 }
 
-/* searchbox */
+/************************ searchbox  *******************/
 .BYXlo {
     background-color: var(--mdc-theme-surface) !important;
 }
@@ -148,12 +113,29 @@ div.gb_we.gb_ue > div > div > div.h8Aqhb {
     background-color: var(--hover) !important;
 }
 
-/* hide the "more Apps button" */
-#gbwa {
-    visibility: hidden !important;
+
+
+/************************ New entry  *******************/
+/* fix button */
+.buGMKc, .dwlvNd.RDPZE .buGMKc:hover, .dwlvNd.RDPZE .buGMKc:focus{
+    border-radius: 0 1rem 1rem 0 !important;
+    padding-left: 1rem !important;
+    margin-left: -1rem !important;
+    width: 14rem !important;
 }
 
-/* left Sidebar */
+div.dwlvNd.Hrn1mc > div > div {
+    border-radius: 0 1rem 1rem 0 !important;
+    width: 95% !important;
+}
+.VKy0Ic[aria-selected=true] {
+    background-color: var(--hover) !important;
+}
+.u3bW4e {
+    background-color: var(--selected) !important;
+}
+
+/************************ left Sidebar *******************/
 /* clicked */
 .DWWcKd-OomVLb-LgbsSe-gk6SMd * {
     background-color: var(--selected) !important;
@@ -190,10 +172,6 @@ div.hEtGGf.HDIIVe.sBn5T::after {
     background-color: var(--fab) !important;
 }
 
-[data-is-pill], [data-is-pill] ~ *, .E4zakf {
-    background-color: var(--primary)!important;
-}
-
 /************* Settings **********************/
 .yVWOnb {
     margin-top: 0.5rem !important;
@@ -218,6 +196,32 @@ div.hEtGGf.HDIIVe.sBn5T::after {
 div.OA0qNb.ncFHed {
     background-color: var(--mdc-theme-surface) !important;
     border-radius: 0.5rem !important;
+}
+
+/************* Misc **********************/
+[data-is-pill], [data-is-pill] ~ *, .E4zakf {
+    background-color: var(--primary)!important;
+}
+
+/* hide the "more Apps button" */
+#gbwa {
+    visibility: hidden !important;
+}
+
+.jVwmLb{
+    border-radius: 5rem !important;
+    width: auto !important;
+    padding-left: 0rem !important;
+}
+
+/* new modal*/
+body > div.JPdR6b.QFf4q.qjTEB > div {
+    background-color: var(--surface) !important;
+}
+
+/* change hover color of calender */
+div.yRgNBf > div[role=row] > span >:hover {
+    background-color: var(--fab-hover) !important;
 }
 
 
