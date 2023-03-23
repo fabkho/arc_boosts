@@ -67,7 +67,7 @@ div.dwlvNd.Hrn1mc > div > div {
 .jVwmLb{
     border-radius: 5rem !important;
     width: auto !important;
-    padding-left: 0rem !important;
+    padding-left: 0 !important;
 }
 
 /* new modal*/
@@ -188,6 +188,10 @@ div.hEtGGf.HDIIVe.sBn5T::after {
 }
 .LOewLb.KKjvXb{
     background-color: var(--fab) !important;
+}
+
+[data-is-pill], [data-is-pill] ~ *, .E4zakf {
+    background-color: var(--primary)!important;
 }
 
 /************* Settings **********************/
