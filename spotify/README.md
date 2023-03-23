@@ -35,6 +35,12 @@ Beautiful theme, inspired by [Dribblish Spicetify](https://github.com/spicetify/
 
 ## Tips ✏️
 
+#### Do you want to set Icons for this extension?
+ 1. Press `command` + `t` and type "manage Extensions"
+ 2. search for the spotify extension and press `Details`
+ 3. Scroll down to "Source" and click on the path. (Finder should open)
+ 2. Now update your "manifest.json" with the one provided in this repo and add the two icon files to your extension folder. 
+
 #### Is your Background to bright to see the font properly?
  -> Go to "styles.css" and change the variable `--contrast-color` to your needs.
  
