@@ -3,6 +3,10 @@
   "description": "",
   "version": "0.0.1",
   "manifest_version": 3,
+  "icons": {
+    "32": "spotify_32.png",
+    "256": "spotify_256.png"
+  },
   "content_scripts": [
     {
       "matches": [

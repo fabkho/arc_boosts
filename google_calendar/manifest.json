@@ -1,7 +1,11 @@
 {
-  "name": "My calendar.google.com Style Boost",
+  "name": "Google Calendar Dark Mode",
   "version": "0.0.1",
   "manifest_version": 3,
+  "icons": {
+    "32": "google-calendar_32.png",
+    "256": "google-calendar_256.png"
+  },
   "content_scripts": [
     {
       "matches": [
