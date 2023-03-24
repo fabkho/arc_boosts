@@ -1,6 +1,6 @@
 # Youtube Spotify Link
 
-This is a simple script that allows you to get search songs in YouTube and get the Spotify link of the song, via one button press.
+This is a simple script that allows you to search songs in YouTube and get the Spotify link of the song, via one button press.
 
 
 ![Youtube Song](youtube_song.png "Youtube Song")
