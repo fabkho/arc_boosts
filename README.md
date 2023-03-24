@@ -1,4 +1,9 @@
-# Collection of my Arc Boosts 🚀
+<div align="center">
+  <h1>Collection of my Arc Boosts 🚀</h1>
+
+[![visitors](https://visitor-badge.glitch.me/badge?page_id=fabian-kho/arc_boosts)](https://visitor-badge.glitch.me)
+</div>
+
 
 ### [Spotify](/spotify) 🎧
 
@@ -15,6 +20,6 @@ Dark theme for Google Calendar.
 
 ### [Youtube Spotify Link](/youtube) 📺
 
-This is a simple script that allows you to get search songs in YouTube and get the Spotify link of the song, via one button press.
+This is a simple script that allows you to search for the current song on spotify, via one button press.
 
 ![Youtube Song](youtube/youtube_song.png "Youtube Song")
