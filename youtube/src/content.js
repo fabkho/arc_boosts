@@ -1,13 +1,33 @@
 setTimeout(() => {
     console.clear();
-
     addNewSpotifyLink();
-
-
 }, 2000);
 
+/**
+ * Observes the DOM for changes
+ * @type {MutationObserver}
+ */
+var observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+        if (mutation.addedNodes.length) {
+            if (mutation.type === 'childList') {
+                addNewSpotifyLink();
+            }
+        }
+    })
+})
+
+/**
+ * Handles adding a new Spotify Button/Link to the page
+ */
 function addNewSpotifyLink () {
     var targetNode = document.querySelector("h1.title.style-scope.ytd-video-primary-info-renderer");
+
+    var config = {
+        childList: true,
+        subtree:true
+    }
+    observer.observe(targetNode, config)
 
     // clean-up string
     const title = targetNode.innerText.replace(/\s*\(.*/, "").replace(/[\s-]+/g, "%20");
@@ -39,5 +59,4 @@ function addNewSpotifyLink () {
     // Inject the button right before the like Button
     buttons.insertAdjacentElement('afterbegin' ,spotifyButton);
 }
-
 
