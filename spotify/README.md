@@ -7,6 +7,8 @@
 </div>
 
 
+### ‼️ **Deprecated** after recent layout change from Spotify!
+
 ## Feautures 💣
 
 - New releases in Sidebar. (link to [spotify release list](https://spotifyreleaselist.netlify.app/) )
