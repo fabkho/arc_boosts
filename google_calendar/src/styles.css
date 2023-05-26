@@ -45,6 +45,12 @@ header{
     background-color: #202124 !important;
 }
 
+
+/************************ sidebar  *******************/
+.akJTWe, .TKMrfe {
+    background-color: var(--mdc-theme-surface) !important;
+}
+
 /************************ search field  *******************/
 form[role=search] {
     background-color: #303134 !important;
