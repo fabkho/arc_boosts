@@ -268,3 +268,266 @@ button[data-encore-id="buttonPrimary"] *:not(.IconWrapper__Wrapper-sc-1hf1hjl-0,
 svg path {
   fill: var(--icons);
 }
+/**
+ * Boost Source: https://arcboosts.com/boosts/82/spotify-arc#code_block
+ */
+
+/* 
+* Color pallet of arc browser
+* Keep in mind that based on your settings, not every variable has an actual value!
+* Tip: If something doesn't work, try to set `!important` behind the statemant.
+ */
+/*
+  --arc-palette-foregroundPrimary
+  --arc-palette-foregroundSecondary
+  --arc-palette-foregroundTertiary
+  --arc-palette-maxContrastColor
+  --arc-palette-minContrastColor
+  --arc-palette-backgroundExtra
+  --arc-palette-background
+  --arc-palette-focus
+  --arc-palette-hover
+  --arc-palette-cutoutcolor
+  --arc-palette-title
+  --arc-palette-subtitle
+  --arc-palette-backgroundExtra
+
+  --arc-background-simple-color
+
+  --arc-background-gradient-color0
+  --arc-background-gradient-color1
+  --arc-background-gradient-color2
+  --arc-background-gradient-overlay0
+  --arc-background-gradient-overlay1
+  --arc-background-gradient-overlay2
+*/
+
+/* global variables*/
+:root {
+  --sidebar-bg: var(--arc-background-simple-color);
+  --gradient1: var(--arc-background-gradient-color0);
+  --gradient2: var(--arc-background-gradient-color1);
+  --gradient3: var(--arc-background-gradient-color2);
+  --primary: var(--arc-palette-foregroundPrimary);
+  --secondary: var(--arc-palette-foregroundSecondary);
+  --tertiary: var(--arc-palette-foregroundTertiary);
+  --contrast-color: var(--arc-palette-title);
+  --main-bg: #0f0f0f;
+  --playlist-color: #000000; /* Current playlists main color. This variable is set by content.js */
+  --main-container: #181818;
+  --icons: #D6E0DE;
+  --main-gap: 15px;
+  --main-corner-radius: 10px;
+}
+
+/* here you can set global styling */
+* {
+  /*font-family: "Comic Sans MS", "Chalkboard SE", cursive, sans-serif !important;*/
+  color: var(--arc-palette-title) !important
+}
+
+
+/********************* main view (window) *****************************/
+.Root__main-view {
+  background-color: var(--main-bg) !important;
+  border-radius: var(--main-corner-radius) var(--main-corner-radius) 0 0;
+  overflow: hidden;
+}
+
+/* change color of top container*/
+#main > div > div.Root__top-container > div.Root__top-bar > header > div.T1xI1RTSFU7Wu94UuvE6{
+  background: linear-gradient(to bottom, var(--main-bg), var(--main-bg), #252525);
+  border-radius: var(--main-corner-radius) var(--main-corner-radius) 0 0;
+}
+
+#main > div > div.Root__top-container > div.Root__main-view > div.main-view-container > div.os-host.os-host-foreign.os-theme-spotify.os-host-resize-disabled.os-host-scrollbar-horizontal-hidden.main-view-container__scroll-node.os-host-overflow.os-host-overflow-y.os-host-transition > div.os-padding > div > div > div.main-view-container__scroll-node-child > main > div.GlueDropTarget.GlueDropTarget--tracks.GlueDropTarget--local-tracks.GlueDropTarget--episodes.GlueDropTarget--albums > section > div.rezqw3Q4OEPB1m4rmwfw > div.contentSpacing > div.ShMHCGsT93epRGdxJp2w.Ss6hr6HYpN4wjHJ9GHmi > div.koyeY6AgGRPmyPITi7yO.qJOhHoRcFhHJpEQ2CwFT{
+  background: linear-gradient(to bottom, var(--main-bg), var(--main-bg), var(--main-container));
+}
+
+/* smooth transition between upper and lower part gradients of main view */
+.CoLO4pdSl8LGWyVZA00t {
+  background-image: linear-gradient(rgba(0,0,0,.5) 0,var(--background-base) 100%),var(--background-noise) !important;
+}
+
+/* remove shadow from playlist cover*/
+.Ws8Ec3GREpT5PAUesr9b *{
+  box-shadow: none !important;
+}
+
+
+/********************* now playing container (bottom) *****************************/
+.GD2gbRtcs5dOjMGAM_Y4 {
+  border-radius: 0 0 var(--main-corner-radius) var(--main-corner-radius) !important;
+}
+
+/* Listening on Device */
+div.Root__now-playing-bar > footer > div:nth-child(2) * {
+  border-radius: 0 0 var(--main-corner-radius) var(--main-corner-radius) !important;
+  background-color: var(--secondary) !important;
+}
+
+.WFRr38dFOxh75JyzSTj5.IbmaxRtjqCjqTBpFwCgw {
+  border-bottom: 10px solid var(--secondary) !important;
+}
+
+
+/********************* navbar (Sidebar) *****************************/
+
+/* hide spacer */
+.FBPrcmuqo3yv5UfWSRl5{
+  display: none;
+}
+
+/* custom spacer */
+.Y8edH1Yjo4xrW_58czQj {
+  height: 2px !important;
+  margin-bottom: 1.25rem;
+  z-index: 20;
+  background-image:  linear-gradient(to right, transparent, var(--arc-palette-hover), transparent) !important;
+}
+
+/* color the sidebar */
+.Root__nav-bar {
+  background-image: linear-gradient(
+          var(--gradient1, var(--sidebar-bg)),
+          var(--gradient2, var(--sidebar-bg)),
+          var(--gradient3, var(--gradient2, var(--sidebar-bg)))
+  );
+}
+
+/* set font color of sidebar */
+.Root__nav-bar *, svg path {
+  color: var(--contrast-color) !important;
+}
+
+/* color the html background */
+html > :not(.main) {
+  background-image: linear-gradient(
+          var(--gradient1, var(--sidebar-bg)),
+          var(--gradient2, var(--sidebar-bg)),
+          var(--gradient3, var(--gradient2, var(--sidebar-bg)))
+  );
+}
+
+/* Hover */
+div.Root__top-container > nav > div.tUwyjggD2n5KvEtP5z1B > ul > li {
+  transition: all 0.1s ease-in-out;
+}
+div.Root__top-container > nav > div.tUwyjggD2n5KvEtP5z1B > ul > li:hover {
+  background-color: var(--arc-palette-hover) !important;
+  border-radius: var(--main-corner-radius);
+  margin: 0 1rem;
+}
+
+div.os-padding > div > div > ul > div > div:nth-child(2) > div{
+  transition: all 0.05s ease, border 0.1s ease;
+}
+
+div.os-padding > div > div > ul > div > div:nth-child(2) > div:hover {
+  background-color: var(--arc-palette-hover) !important;
+  border: 2px transparent var(--arc-palette-hover) !important;
+  border-radius: var(--main-corner-radius);
+  background-clip: padding-box;
+  margin: 0 1.25rem;
+}
+
+/* highlight current selected playlist in sidebar */
+.selected-playlist {
+  border: 2px solid var(--arc-palette-hover) !important;
+  border-radius: var(--main-corner-radius);
+  margin: 0 1.25rem;
+}
+
+/* fade effect (top and bottom of scrollable list of playlists) */
+.Y8edH1Yjo4xrW_58czQj::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  height: 1.75rem;
+  background: linear-gradient(var(--sidebar-bg), transparent);
+}
+
+#main > div > div.Root__top-container > nav > div.tUwyjggD2n5KvEtP5z1B > div.LKgm9fCDTO7wqig_5U1q > div:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5rem;
+  background: linear-gradient(transparent, var(--sidebar-bg));
+}
+
+
+/********************* Grid *****************************/
+.Root__top-container {
+  padding: var(--main-gap) 0;
+}
+
+.Root__top-container:has(.main-buddyFeed-container ) {
+  grid-template-areas:
+        "top-bar top-bar top-bar"
+        "nav-bar main-view right-sidebar"
+        "nav-bar now-playing-bar right-sidebar";
+}
+
+.Root__top-container:not(:has(.main-buddyFeed-container )) {
+  grid-template-areas:
+        "top-bar top-bar"
+        "nav-bar main-view"
+        "nav-bar now-playing-bar";
+  padding-right: var(--main-gap);
+}
+
+
+/********************* player controls *****************************/
+.player-controls__buttons--new-icons button {
+  background-color: unset !important;
+  transition: all 0.2s ease-in-out;
+}
+.player-controls__buttons--new-icons button:hover {
+  background-color: var(--sidebar-bg) !important;
+  border-radius: 2rem !important;
+}
+
+
+/********************* Images *****************************/
+/* corner radius on playlist images */
+div[data-testid="playlist-image"] img:first-child {
+  border-radius: var(--main-corner-radius);
+}
+
+/* corner radius on song cove r*/
+div.gvLrgQXBFVW6m9MscfFA > img,
+.BFR9Zt3zpL8BATBMiwQB * {
+  border-radius: 0.2rem;
+}
+
+
+/********************* misc *****************************/
+/*Hide download button */
+a[href="/download"] {
+  display: none;
+}
+
+/* Hide Recommended section*/
+div.contentSpacing > div.kwe0I8sSNMv3gYBjkRYP {
+  display: none;
+}
+
+/* hide sidebar elements (liked songs etc) */
+div.LKgm9fCDTO7wqig_5U1q > div > div:nth-child(-n+3),
+button.STDuzt77yRCueC4Ohenl,
+main > div.main-view-container__mh-footer-container > nav {
+  display: none;
+}
+
+/* remove background color of play button*/
+button[data-encore-id="buttonPrimary"] *:not(.IconWrapper__Wrapper-sc-1hf1hjl-0, svg) {
+  background-color: var(--main-bg) !important;
+}
+/* fill color of all icons*/
+svg path {
+  fill: var(--icons);
+}
