@@ -3,6 +3,12 @@ setTimeout(() => {
     addNewSpotifyLink();
 }, 2000);
 
+if (window.trustedTypes && window.trustedTypes.createPolicy) {
+  window.trustedTypes.createPolicy('default', {
+    createHTML: (string, sink) => string
+  });
+}
+
 /**
  * Observes the DOM for changes
  * @type {MutationObserver}
